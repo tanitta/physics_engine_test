@@ -8,12 +8,16 @@
 #include <boost/numeric/ublas/matrix_sparse.hpp>  // (5) 疎行列用のヘッダ
 #include <boost/numeric/ublas/vector.hpp>         // (6) ベクトル用のヘッダ
 #include <boost/numeric/ublas/vector_sparse.hpp>  // (7) 疎ベクトル用のヘッダ
+#include <boost/numeric/ublas/io.hpp>
 using namespace boost::numeric;         // boost::numeric
 
 class ofApp : public ofBaseApp{
 	public:
 		ublas::matrix<double> mat_d;
-		ofApp():mat_d(3,4){};
+		ofApp():mat_d(2,2){
+			mat_d(0,0) = 0.0;
+			cout<<mat_d<<endl;
+		};
 		~ofApp(){};
 		
 		void setup(){};
