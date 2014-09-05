@@ -1,13 +1,14 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include <physics_entity.hpp>
 class ofApp : public ofBaseApp{
-
+	private:
+		physics_engine_test::physics_entity physics_entity;
 	public:
-		ofApp(){};
+		ofApp():physics_entity(){};
 		~ofApp(){};
-		
+
 		void setup(){};
 		void update(){};
 		void draw(){};
@@ -21,5 +22,5 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h){};
 		void dragEvent(ofDragInfo dragInfo){};
 		void gotMessage(ofMessage msg){};
-		
+
 };
