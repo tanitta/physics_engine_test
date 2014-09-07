@@ -1,5 +1,6 @@
+#pragma once
 #include <boost/numeric/ublas/matrix.hpp>
-namespace physics_engine_test {
+namespace physics_engine {
 	class physics_entity {
 		private:
 			boost::numeric::ublas::vector<double> vecA;

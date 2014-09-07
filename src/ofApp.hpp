@@ -1,10 +1,11 @@
 #pragma once
 
 #include "ofMain.h"
+#include <physics_engine.hpp>
 #include <physics_entity.hpp>
 class ofApp : public ofBaseApp{
 	private:
-		physics_engine_test::physics_entity physics_entity;
+		physics_engine::physics_entity physics_entity;
 	public:
 		ofApp():physics_entity(){};
 		~ofApp(){};
