@@ -5,9 +5,9 @@
 #include <physics_entity.hpp>
 class ofApp : public ofBaseApp{
 	private:
-		physics_engine::physics_entity physics_entity;
+		physics_engine::PhysicsEngine physics_engine_;
 	public:
-		ofApp():physics_entity(){};
+		ofApp():physics_engine_(){};
 		~ofApp(){};
 
 		void setup(){};
